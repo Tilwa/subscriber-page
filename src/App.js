@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
+import "./app.css";
+import Footer from "./components/footer/Footer";
+import Form from "./components/form/Form";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Form />
+      {/* <div className="hero">
+        <div className="logo-left-div"></div>
+        <div className="form-right-div">
+          <div className="main-right">
+            <div className="supplier-login">
+              <div>
+                {" "}
+                <h1 className="supplier-heading">Supplier Login </h1>
+              </div>
+              <div>
+                {" "}
+                <button className="top-btn">Login</button>
+                <button className="top-btn">Signup</button>
+              </div>
+            </div>
+            <div className="contact-from">sss</div>
+          </div>
+        </div>
+      </div>
+      <Footer /> */}
+      <Footer />
+    </>
   );
 }
 
